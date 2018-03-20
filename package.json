@@ -1,0 +1,33 @@
+{
+  "name": "CRUDRoutes",
+  "version": "0.1.1",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "debug": "nodemon --inspect test/manual/index.js",
+    "debug:koa": "nodemon --inspect test/manual/index-koa.js",
+    "start": "nodemon test/manual/index.js",
+    "start:koa": "nodemon test/manual/index-koa.js",
+    "test": "NODE_ENV=test mocha --require test/int/init.js --recursive --exit test/int/**/*.test.js",
+    "test:debug": "NODE_ENV=test mocha --inspect-brk --require test/int/init.js --recursive --exit test/int/**/*.test.js"
+  },
+  "author": "Andrew Ochtinsky",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2",
+    "inflection": "^1.12.0",
+    "koa": "^2.5.0",
+    "koa-router": "^7.4.0",
+    "lodash": "^4.17.5",
+    "mongoose": "^5.0.8",
+    "winston": "^2.4.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "eslint": "^4.18.2",
+    "mocha": "^5.0.1",
+    "nodemon": "^1.17.1",
+    "supertest": "^3.0.0"
+  }
+}
