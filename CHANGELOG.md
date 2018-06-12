@@ -1,3 +1,9 @@
+# 0.2.1
+* Renamed to crud-routes
+
+# 0.2.0
+* Added basic support for Sequelize. Only find and findOne are working.
+
 # 0.1.1
 * bug fix
 
