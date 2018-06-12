@@ -1,5 +1,5 @@
 {
-  "name": "CRUDRoutes",
+  "name": "crudroutes",
   "version": "0.1.1",
   "description": "",
   "main": "lib/index.js",
@@ -20,6 +20,8 @@
     "koa-router": "^7.4.0",
     "lodash": "^4.17.5",
     "mongoose": "^5.0.8",
+    "mysql2": "^1.5.3",
+    "sequelize": "^4.37.10",
     "winston": "^2.4.0"
   },
   "devDependencies": {

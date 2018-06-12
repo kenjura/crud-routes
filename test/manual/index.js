@@ -1,4 +1,5 @@
-const server = require('../shared/express-server');
+// const server = require('../shared/express-server');
+const server = require('../shared/express-sequelize');
 
 
 server.get('/', (req,res) => res.send(`
