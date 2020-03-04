@@ -10,14 +10,14 @@ const app = express();
 
 const router = express.Router();
 
-// genericApi(router, '/user', User);
-genericApi(router, '/user', User, {
-  render: async (req, res) => {
-    res.send(datagrid({
-      data: res.result.data.map(d => d.toObject())
-    }));
-  }
-});
+genericApi(router, '/user', User);
+// genericApi(router, '/user', User, {
+//   render: async (req, res) => {
+//     res.send(datagrid({
+//       data: res.result.data.map(d => d.toObject())
+//     }));
+//   }
+// });
 
 app.use(router);
 
