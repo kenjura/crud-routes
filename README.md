@@ -18,6 +18,7 @@ Getting started:
 ```js
 const express = require('express');
 const CRUDRoutes = require('CRUDRoutes');
+const User = require('./User'); // a mongoose model of some sort
 
 const app = express();
 
