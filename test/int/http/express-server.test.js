@@ -12,7 +12,7 @@ async function injectTestData() {
   await User.insertMany(getTestData());
 }
 
-describe('find endpoint (/user)', async () => {
+describe('express server > find endpoint (/user)', async () => {
   it('returns the right number of records', () => {
     return request(server)
       .get('/user')
@@ -34,7 +34,7 @@ describe('find endpoint (/user)', async () => {
   it('limits fields correctly');
 });
 
-describe('findOne endpoint (/user/:id)', async () => {
+describe('express server > findOne endpoint (/user/:id)', async () => {
   it('finds the user requested', () => {
     return request(server)
       .get(`/user/${objectId(4)}`)
@@ -44,23 +44,23 @@ describe('findOne endpoint (/user/:id)', async () => {
   })
 });
 
-describe('create endpoint (POST /user)', async () => {
+describe('express server > create endpoint (POST /user)', async () => {
   it('creates the user requested');
 })
 
-describe('update endpoint (PUT /user/:id)', async () => {
+describe('express server > update endpoint (PUT /user/:id)', async () => {
   it('updates the user requested');
 })
 
-describe('upsertMany endpoint (PUT /user)', async () => {
+describe('express server > upsertMany endpoint (PUT /user)', async () => {
   it('inserts and updates as requested');
 })
 
-describe('remove endpoint (DELETE /user/:id)', async () => {
+describe('express server > remove endpoint (DELETE /user/:id)', async () => {
   it('deletes the user requested');
 })
 
-describe('removeMany endpoint (DELETE /user?filters)', async () => {
+describe('express server > removeMany endpoint (DELETE /user?filters)', async () => {
   it('deletes the users requested');
 })
 
