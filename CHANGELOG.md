@@ -1,3 +1,8 @@
+# 0.2.0
++ Renamed package to crud-routes
++ Updated README to provide slightly more useful code example
++ BUGFIX: fixed broken tests
+
 # 0.1.1
 * bug fix
 
