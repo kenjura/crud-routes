@@ -1,5 +1,5 @@
 {
-  "name": "CRUDRoutes",
+  "name": "crud-routes",
   "version": "0.1.1",
   "description": "",
   "main": "lib/index.js",
